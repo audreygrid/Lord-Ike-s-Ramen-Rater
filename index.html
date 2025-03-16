@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <p style="position: fixed; width: 200px; font-size: 35px; top: 20px; left: 45%; border-radius: 30px; color: rgb(0, 0, 0); border-color: rgb(0, 0, 0); height: 40px; font-weight: 3000; font-style:oblique ;">Ramen </p>
+    <p style="position: fixed; width: 100px; text-align: center; font-size: xx-large; top: 20px; left: 53.5%; border-radius: 30px; background-color: rgb(255, 149, 0); color: white; height: 40px; font-style:oblique ;" > rater</p>
+    <div>
+        <form id="ramen-form">
+            <p>Ramen Name</p>
+            <input type="text" id="ramen-name" placeholder="Ramen Name" class="field" required>
+            
+            <p>Restaurant Name</p>
+            <input type="text" id="ramen-restaurant" placeholder="Restaurant Name" class="field" required>
+            
+            <p>Image URL</p>
+            <input type="text" id="ramen-image" placeholder="Image URL" class="field" required>
+            
+            <p>Rating (1-5)</p>
+            <input type="number" id="ramen-rating" placeholder="Rating (1-5)" class="field" min="1" max="5">
+            
+            <p>Comment</p>
+            <textarea id="ramen-comment" placeholder="Comment" class="field"></textarea>
+            
+            <button class="add" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="ramen-menu"> 
+            <div id="Theimages">
+                <ul class="list" id="theList">
+                    
+                    
+                </ul>
+            </div>
+            <div class="MainImage" id="ramen-detail">
+                <img src="ramens/ramen1.jpg" alt="mainramen" id="MII">
+                <p class="Par" id="MainName">Naruto Ramen</p>
+                <p class="Par" id="MainRes">Ichiraku Ramen</p>
+                <p class="Par" id="MainRating">1/5</p>
+                <p class="Par" id="MainComment">Mmmm Naruto</p>
+            </div> 
+    </div>
     
+
     <script src="index.js"></script>
 </body>
 </html>
