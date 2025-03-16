@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://source.unsplash.com/1600x900/?ramen');
+    background: -webkit-linear-gradient(#ffffff, hsl(28, 100%, 76%)); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

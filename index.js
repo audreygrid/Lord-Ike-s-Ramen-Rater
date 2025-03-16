@@ -35,11 +35,11 @@ function displayRamens() {
         img.src = ramen.image;
         img.alt = ramen.name;
         
-        // Append the image to the list item
+        
         nlist.appendChild(img);
         List.appendChild(nlist);
 
-        // Add the click event listener to load ramen details
+        
         img.addEventListener("click", () => {
             handleClick(ramen);
         });
@@ -63,7 +63,7 @@ function display_a_Ramen(ramen) {
 
 
 function handleClick(ramen) {
-    // Update the main image and details based on the selected ramen
+    
     MainImage.src = ramen.image;
     MainName.textContent = ramen.name;
     MainRes.textContent = ramen.restaurant;
